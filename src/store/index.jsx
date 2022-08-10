@@ -9,4 +9,4 @@ export default configureStore({
         products: productsSlice,
         purchases: purchases
     }
-})
+}) 
