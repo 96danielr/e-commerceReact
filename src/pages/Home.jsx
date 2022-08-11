@@ -67,7 +67,7 @@ const Home = () => {
     variant="outline-secondary"
     onClick={() => dispatch(filterQueryThunk(searchProduct))}
   >
-    Button
+    <i class="fa-solid fa-magnifying-glass"></i>
   </Button>
 </InputGroup>
 <Row xs={1} md={2} xl={3} className="g-4">
@@ -81,6 +81,7 @@ const Home = () => {
             This is a longer card with supporting text below as a natural
             lead-in to additional content. This content is a little bit
             longer.
+            <i class="fa-solid fa-cart-circle-check"></i>
           </Card.Text>
         </Card.Body>
       </Card>
