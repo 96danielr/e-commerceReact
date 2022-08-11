@@ -50,29 +50,33 @@ const ProductDetail = () => {
         <Card.Body>
           <Card.Title>{productDetail?.title}</Card.Title>
           <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+          <p className='product-description'>
+                    {productDetail?.description}
+                </p>
           </Card.Text>
           <div>
             <h3>Add product to cart</h3>
 
-            <InputGroup className="mb-3">
+            <InputGroup className="mb-3" style={{width: "10%",marginLeft: "45%"}}>
               <Form.Control
                 placeholder="units"
                 aria-label="Recipient's username"
                 aria-describedby="basic-addon2"
                 value={quantity}
                 onChange={(e) => setQuantity(e.target.value)}
+                
               />
               <Button
                 variant="secondary"
                 id="button-addon2"
                 onClick={addToCart}
               >
-                Add
+                <i class="fa-solid fa-cart-shopping"></i>
               </Button>
             </InputGroup>
           </div>
+
+         
         </Card.Body>
       </Card>
 

@@ -78,11 +78,10 @@ const Home = () => {
         <Card.Body>
           <Card.Title>{product.title}</Card.Title>
           <Card.Text>
-            This is a longer card with supporting text below as a natural
-            lead-in to additional content. This content is a little bit
-            longer.
-            <i class="fa-solid fa-cart-circle-check"></i>
+          <span className='price'>Price</span>
+           <span className="amount">$ {product.price}</span>
           </Card.Text>
+          
         </Card.Body>
       </Card>
     </Col>
