@@ -73,7 +73,7 @@ const Home = () => {
 <Row xs={1} md={2} xl={3} className="g-4">
   {products.map((product) => (
     <Col>
-      <Card onClick={() => navigate(`/detail/${product.id}`)}>
+      <Card onClick={() => navigate(`/detail/${product.id}`)} style = {{height: "300px"}}>
         <Card.Img variant="top" src={product.productImgs[0]} />
         <Card.Body>
           <Card.Title>{product.title}</Card.Title>
